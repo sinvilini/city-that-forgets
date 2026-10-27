@@ -1,0 +1,35 @@
+public class Playes : MonoBehaviour
+{
+    private float Speed = 5f;
+
+    private Ragidbody20 rb;
+
+    private void Arake()
+    {
+        rb = GetComponent<Rightbody20>();
+    }
+
+    private void FixedUpdate() 
+    {
+        Vector2 inputVector = new Vectjr2(0, 0);
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            InputVector.y = 1f;
+        }
+        if (Input.Getkey(KeyCode.S))
+        {
+            InputVector.y = -1f;
+        {
+        if (Input.Getkey(KeyCode.A))
+        {
+            InputVector.x = -1f;
+        {
+        if (Input.Getkey(KeyCode.D))
+        {
+            InputVector.x = 1f;
+        {
+
+        rb. MovePositionirb.position + inputVector • (movingSpeed • Time, fixedDeltaTine):
+    }
+}
