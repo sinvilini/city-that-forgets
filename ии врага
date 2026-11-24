@@ -1,0 +1,15 @@
+public class EnemyAI : MonoBehaviour
+{
+   
+
+    [SerializeField] private State startingState;
+    [SerializeField] private float roamingDistanceMin = 3f;  #минимальное значение на которое он может отходть
+    [SerializeField] private float roamingDistanceMax = 7f;  #максимальное значение на которое он может отходть
+    [SerializeField] private float roamingTimerMax = 2f;  #время после еоторого он выбираетт новое место
+
+     private enum State
+    {
+        Idle,
+        Roaming
+    }
+}
