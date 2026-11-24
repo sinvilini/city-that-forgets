@@ -38,6 +38,8 @@ public class Player : MonoBehaviour
             inputVector.x = 1f;
         }
 
+        inputVector = inputVector.normalized;
+
         Debug.Log(inputVector);
 
         rb.MovePosition(rb.position + inputVector * movingSpeed * Time.fixedDeltaTime);
